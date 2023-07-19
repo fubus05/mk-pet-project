@@ -1,0 +1,64 @@
+@font-face {
+    font-family: MortalKombat;
+    src: url('../../assets/fonts/mortalkombat3.ttf');
+}
+
+body{
+    overflow: hidden;
+    margin: 0;
+}
+
+.transition-fade {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .transition-fade.fade-enter {
+    opacity: 0;
+  }
+  
+  .transition-fade.fade-enter-active {
+    opacity: 1;
+  }
+
+.container{
+    background-image: url('./assets/soulchamber.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header_text{
+    margin: 0;
+    text-align: center;
+    font-family: MortalKombat;
+    font-size: 100px;
+    top: 0;
+    right: 37%;
+    position: absolute;
+}
+
+.versus{
+    margin: 0;
+    font-family: MortalKombat;
+    font-size: 150px;
+    top: 35%;
+    right: 45%;
+    color: red;
+    position: absolute;
+}
+
+.fight_right{
+    transform: scaleX(-1) rotate(15deg);
+    position: absolute;
+    bottom: -25px;
+    right: -75px;
+}
+
+.fight_left{
+    transform: rotate(15deg);
+    position: absolute;
+    bottom: -25px;
+    left: -75px;
+}
